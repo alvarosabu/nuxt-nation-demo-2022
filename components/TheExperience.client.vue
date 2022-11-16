@@ -43,7 +43,7 @@ scene.add(light);
 // Model
 const { loadModel } = useModel();
 
-const cat = await loadModel('/models/nuxt-mascot/nuxt-mascot.gltf');
+const cat = await loadModel('https://raw.githubusercontent.com/alvarosabu/nuxt-nation-demo-2022/main/public/nuxt-mascot/nuxt-mascot.gltf');
 
 if (cat) {
   scene.add(cat as Object3D<Event>);
